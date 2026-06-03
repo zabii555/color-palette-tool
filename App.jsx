@@ -105,36 +105,39 @@ export default function App() {
         </div>
       </div>
 
-      <section className="mt-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 text-center">
-            <h2 className="text-3xl font-bold text-yellow-500">✨ How to Use Chromify</h2>
+      {/* How to Use This Tool */}
+      <div className="bg-gray-900/50 rounded-2xl p-6 mb-8 border border-gray-700">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center">
+          <span className="text-yellow-500">✨ How to Use</span> This Tool
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          
+          <div className="p-4 rounded-xl hover:bg-gray-800/50 transition">
+            <div className="text-4xl mb-2">1️⃣</div>
+            <h3 className="text-lg font-bold mb-1">Pick a Base Color</h3>
+            <p className="text-gray-400 text-sm">Click the color picker & choose any color</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gray-900 border border-yellow-500/20 rounded-3xl p-6 shadow-[0_20px_50px_rgba(212,175,55,0.18)] transform transition duration-300 hover:scale-[1.02]">
-              <div className="text-4xl mb-4">📸</div>
-              <h3 className="text-xl font-semibold text-white mb-2">Upload Image</h3>
-              <p className="text-gray-300">
-                Click the box above and select any image (JPG, PNG, WEBP)
-              </p>
-            </div>
-            <div className="bg-gray-900 border border-yellow-500/20 rounded-3xl p-6 shadow-[0_20px_50px_rgba(212,175,55,0.18)] transform transition duration-300 hover:scale-[1.02]">
-              <div className="text-4xl mb-4">🎨</div>
-              <h3 className="text-xl font-semibold text-white mb-2">Auto Extract</h3>
-              <p className="text-gray-300">
-                Tool automatically finds 5 dominant colors from your image
-              </p>
-            </div>
-            <div className="bg-gray-900 border border-yellow-500/20 rounded-3xl p-6 shadow-[0_20px_50px_rgba(212,175,55,0.18)] transform transition duration-300 hover:scale-[1.02]">
-              <div className="text-4xl mb-4">📋</div>
-              <h3 className="text-xl font-semibold text-white mb-2">Copy & Use</h3>
-              <p className="text-gray-300">
-                Click Copy Hex or Copy RGB and paste anywhere
-              </p>
-            </div>
+
+          <div className="p-4 rounded-xl hover:bg-gray-800/50 transition">
+            <div className="text-4xl mb-2">2️⃣</div>
+            <h3 className="text-lg font-bold mb-1">Adjust Harmony</h3>
+            <p className="text-gray-400 text-sm">Use sliders to change hue, saturation & lightness</p>
           </div>
+
+          <div className="p-4 rounded-xl hover:bg-gray-800/50 transition">
+            <div className="text-4xl mb-2">3️⃣</div>
+            <h3 className="text-lg font-bold mb-1">Copy & Use</h3>
+            <p className="text-gray-400 text-sm">Click any color swatch to copy hex code</p>
+          </div>
+
         </div>
-      </section>
+        
+        <div className="mt-4 text-center text-sm text-gray-500 border-t border-gray-800 pt-4">
+          💡 Pro tip: Use <kbd className="px-2 py-1 bg-gray-800 rounded">Alt+R</kbd> to randomize,{' '}
+          <kbd className="px-2 py-1 bg-gray-800 rounded">Alt+G</kbd> to generate,{' '}
+          <kbd className="px-2 py-1 bg-gray-800 rounded">Alt+C</kbd> to copy CSS
+        </div>
+      </div>
 
       {/* Main Content */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12">
