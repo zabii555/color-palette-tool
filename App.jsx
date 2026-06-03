@@ -105,6 +105,37 @@ export default function App() {
         </div>
       </div>
 
+      <section className="mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold text-yellow-500">✨ How to Use Chromify</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-gray-900 border border-yellow-500/20 rounded-3xl p-6 shadow-[0_20px_50px_rgba(212,175,55,0.18)] transform transition duration-300 hover:scale-[1.02]">
+              <div className="text-4xl mb-4">📸</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Upload Image</h3>
+              <p className="text-gray-300">
+                Click the box above and select any image (JPG, PNG, WEBP)
+              </p>
+            </div>
+            <div className="bg-gray-900 border border-yellow-500/20 rounded-3xl p-6 shadow-[0_20px_50px_rgba(212,175,55,0.18)] transform transition duration-300 hover:scale-[1.02]">
+              <div className="text-4xl mb-4">🎨</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Auto Extract</h3>
+              <p className="text-gray-300">
+                Tool automatically finds 5 dominant colors from your image
+              </p>
+            </div>
+            <div className="bg-gray-900 border border-yellow-500/20 rounded-3xl p-6 shadow-[0_20px_50px_rgba(212,175,55,0.18)] transform transition duration-300 hover:scale-[1.02]">
+              <div className="text-4xl mb-4">📋</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Copy & Use</h3>
+              <p className="text-gray-300">
+                Click Copy Hex or Copy RGB and paste anywhere
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Content */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-12">
         {/* Upload Section */}
