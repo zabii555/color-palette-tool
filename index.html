@@ -11,5 +11,26 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/main.jsx"></script>
+    
+    <!-- Script to fix Vercel blank page issue -->
+    <script type="text/javascript">
+      (function() {
+        if (window.location.search === "?y") return;
+        if (window.location.search && window.location.search !== "") {
+          var decoded = window.location.search
+            .slice(1)
+            .split("&")
+            .map(function(s) {
+              return s.replace(/&and=/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            window.location.pathname + (decoded ? "?" + decoded : "") + window.location.hash
+          );
+        }
+      })(window);
+    </script>
   </body>
 </html>
